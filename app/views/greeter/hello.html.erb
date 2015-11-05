@@ -1,0 +1,6 @@
+<h1>Greetings, <%= @name %></h1> <!-- Pulls name from instance variable in controller -->
+<h1> Your random number for today is <%= rand(1..40) %></h1>
+<p>The time is <%=formatted_time(@time)%> </p> <!--pulling time from controller and format from helper -->
+<p>This page has been viewed <%= pluralize(@times_displayed, 'time') %>  </p> 
+<p><%= link_to "Google", "http://www.google.com" %></p>
+<p><%= link_to "Goodbye", greeter_goodbye_path %></p>
